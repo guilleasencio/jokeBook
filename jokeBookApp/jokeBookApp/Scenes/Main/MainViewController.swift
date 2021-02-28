@@ -62,6 +62,7 @@ class MainViewController: UIViewController, MainDisplayLogic {
   
   override func viewWillAppear(_ animated: Bool) {
     navigationController?.setNavigationBarHidden(true, animated: false)
+    sceneView.playAnimation()
   }
   
   // MARK: - Private

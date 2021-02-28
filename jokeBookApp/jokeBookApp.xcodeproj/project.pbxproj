@@ -12,6 +12,8 @@
 		464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */; };
 		464488D125EA73C3007B0BE3 /* jokeBookAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488D025EA73C3007B0BE3 /* jokeBookAppTests.swift */; };
 		464488DC25EA73C3007B0BE3 /* jokeBookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488DB25EA73C3007B0BE3 /* jokeBookAppUITests.swift */; };
+		469DA2DD25EC4CF4006F3919 /* laughs.json in Resources */ = {isa = PBXBuildFile; fileRef = 469DA2DC25EC4CF4006F3919 /* laughs.json */; };
+		469DA2E225EC510A006F3919 /* jellyfish.json in Resources */ = {isa = PBXBuildFile; fileRef = 469DA2E125EC510A006F3919 /* jellyfish.json */; };
 		46B6B9E625EB8B7B00B7FF6E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E025EB8B7B00B7FF6E /* MainPresenter.swift */; };
 		46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E225EB8B7B00B7FF6E /* MainRouter.swift */; };
 		46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E325EB8B7B00B7FF6E /* MainModels.swift */; };
@@ -60,6 +62,7 @@
 		46F6A82A25EC3FAB00329135 /* JokePunchlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82425EC3FAB00329135 /* JokePunchlineViewController.swift */; };
 		46F6A82B25EC3FAB00329135 /* JokePunchlineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82525EC3FAB00329135 /* JokePunchlineInteractor.swift */; };
 		46F6A83325EC431300329135 /* JokePunchlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A83225EC431300329135 /* JokePunchlineView.swift */; };
+		46F6A84525EC46E300329135 /* AnimationIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A84425EC46E300329135 /* AnimationIdentifiers.swift */; };
 		4D9FEA9B6CBB3E7BF0B3B698 /* Pods_jokeBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +95,8 @@
 		464488D725EA73C3007B0BE3 /* jokeBookAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jokeBookAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		464488DB25EA73C3007B0BE3 /* jokeBookAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jokeBookAppUITests.swift; sourceTree = "<group>"; };
 		464488DD25EA73C3007B0BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469DA2DC25EC4CF4006F3919 /* laughs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = laughs.json; sourceTree = "<group>"; };
+		469DA2E125EC510A006F3919 /* jellyfish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jellyfish.json; sourceTree = "<group>"; };
 		46B6B9E025EB8B7B00B7FF6E /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		46B6B9E225EB8B7B00B7FF6E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		46B6B9E325EB8B7B00B7FF6E /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 		46F6A82425EC3FAB00329135 /* JokePunchlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineViewController.swift; sourceTree = "<group>"; };
 		46F6A82525EC3FAB00329135 /* JokePunchlineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineInteractor.swift; sourceTree = "<group>"; };
 		46F6A83225EC431300329135 /* JokePunchlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineView.swift; sourceTree = "<group>"; };
+		46F6A84425EC46E300329135 /* AnimationIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationIdentifiers.swift; sourceTree = "<group>"; };
 		9408372E16B3182E79C60FEE /* Pods-jokeBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.release.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4C8AAA158C49414F4D85DE /* Pods-jokeBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.debug.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jokeBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +277,7 @@
 		46B6B9D425EB89FD00B7FF6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46F6A83725EC45ED00329135 /* Animations */,
 				46F6A7A225EBD9F900329135 /* Fonts */,
 				464488C225EA73C3007B0BE3 /* Images.xcassets */,
 				46F6A75125EBA27E00329135 /* Colors.xcassets */,
@@ -325,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				46F6A76C25EBAF1F00329135 /* Colors.swift */,
+				46F6A84425EC46E300329135 /* AnimationIdentifiers.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -430,6 +438,15 @@
 				46F6A83225EC431300329135 /* JokePunchlineView.swift */,
 			);
 			path = JokePunchline;
+			sourceTree = "<group>";
+		};
+		46F6A83725EC45ED00329135 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				469DA2E125EC510A006F3919 /* jellyfish.json */,
+				469DA2DC25EC4CF4006F3919 /* laughs.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		819F6FBEF6FE331150215128 /* Pods */ = {
@@ -550,6 +567,8 @@
 				46F6A75225EBA27E00329135 /* Colors.xcassets in Resources */,
 				464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */,
 				464488C325EA73C3007B0BE3 /* Images.xcassets in Resources */,
+				469DA2DD25EC4CF4006F3919 /* laughs.json in Resources */,
+				469DA2E225EC510A006F3919 /* jellyfish.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +682,7 @@
 				46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */,
 				46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */,
 				46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */,
+				46F6A84525EC46E300329135 /* AnimationIdentifiers.swift in Sources */,
 				46F6A82A25EC3FAB00329135 /* JokePunchlineViewController.swift in Sources */,
 				46F6A81625EC33E800329135 /* JokeListTableViewCell.swift in Sources */,
 				46F6A7BC25EBFBD500329135 /* JokeListModels.swift in Sources */,

@@ -20,7 +20,7 @@ class MainPresenter: MainPresentationLogic {
   // MARK: Public
   
   func presentLoadData(response: Main.Data.Response) {
-    let data = MainViewData(buttonText: "Next")
+    let data = MainViewData(buttonText: "Let's start joking time!")
     let viewModel = Main.Data.ViewModel(data: data)
     viewController?.displayLoadData(viewModel: viewModel)
   }

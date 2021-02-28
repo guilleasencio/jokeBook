@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.1)
+  - lottie-ios (3.2.1)
   - SwiftGen (6.4.0)
 
 DEPENDENCIES:
   - Alamofire
+  - lottie-ios
   - SwiftGen
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - lottie-ios
     - SwiftGen
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: 5f6d920c87260e68fbe9918efeb5e79379f4ff2b
+PODFILE CHECKSUM: d5fed6441d3e84d7fb08a74fb01de131eba37cb7
 
 COCOAPODS: 1.10.1
