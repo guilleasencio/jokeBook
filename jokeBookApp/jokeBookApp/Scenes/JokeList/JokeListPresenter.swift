@@ -24,7 +24,16 @@ class JokeListPresenter: JokeListPresentationLogic {
   }
   
   func presentData(response: JokeList.Data.Response) {
-    let viewModel = JokeList.Data.ViewModel()
+    let state: JokeListViewState
+    switch response.state {
+      case .loading:
+        state = .loading
+      case .jokeList(let data):
+        state = .jokeList(data: createTableData(data: data))
+      case .error:
+        state = .error
+    }
+    let viewModel = JokeList.Data.ViewModel(state: state)
     viewController?.displayData(viewModel: viewModel)
   }
   
@@ -44,5 +53,13 @@ class JokeListPresenter: JokeListPresentationLogic {
       case .programming:
         return "Joke List (Programming)"
     }
+  }
+  
+  private func createTableData(data: [JokeEntity]) -> [JokeListTableViewCellData] {
+    data.map({ createTableCellData(data: $0) })
+  }
+  
+  private func createTableCellData(data: JokeEntity) -> JokeListTableViewCellData {
+    JokeListTableViewCellData(setup: data.setup)
   }
 }

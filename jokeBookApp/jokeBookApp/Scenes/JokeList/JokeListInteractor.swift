@@ -44,19 +44,24 @@ class JokeListInteractor: JokeListBusinessLogic, JokeListDataStore {
     guard let jokeType = selectedJokeType else {
       return
     }
+    
+    let response = JokeList.Data.Response(state: .loading)
+    presenter?.presentData(response: response)
+    
     let parameters = GetJokesParameters(type: jokeType)
     jokesApi?.getJokes(parameters: parameters) { [weak self] result in
       guard let self = self else {
         return
       }
-      var hasError: GetJokesError?
+      let state: JokeListState
       switch result {
         case .success(let entities):
           self.jokes = entities
-        case .failure(let error):
-          hasError = error
+          state = .jokeList(data: entities)
+        case .failure:
+          state = .error
       }
-      let response = JokeList.Data.Response(jokes: self.jokes, error: hasError)
+      let response = JokeList.Data.Response(state: state)
       self.presenter?.presentData(response: response)
     }
   }

@@ -101,7 +101,7 @@ class JokeListViewController: UIViewController, JokeListDisplayLogic {
   }
   
   func displayData(viewModel: JokeList.Data.ViewModel) {
-    
+    sceneView.setState(state: viewModel.state)
   }
   
   func displaySelectJoke(viewModel: JokeList.SelectJoke.ViewModel) {

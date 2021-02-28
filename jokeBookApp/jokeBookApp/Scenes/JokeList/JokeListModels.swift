@@ -29,11 +29,11 @@ enum JokeList {
     }
     
     struct Response {
-      let jokes: [JokeEntity]
-      let error: GetJokesError?
+      let state: JokeListState
     }
     
     struct ViewModel {
+      let state: JokeListViewState
     }
   }
   
@@ -48,4 +48,20 @@ enum JokeList {
     struct ViewModel {
     }
   }
+}
+
+// MARK: - Business models
+
+enum JokeListState {
+  case loading
+  case jokeList(data: [JokeEntity])
+  case error
+}
+
+// MARK: - View models
+
+enum JokeListViewState {
+  case loading
+  case jokeList(data: [JokeListTableViewCellData])
+  case error
 }

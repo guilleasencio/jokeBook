@@ -106,6 +106,7 @@ class JokeTypeListView: UIView {
 extension JokeTypeListView: UICollectionViewDelegate {
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    collectionView.deselectItem(at: indexPath, animated: false)
     delegate?.jokeTypeListViewDidTapCell(self, index: indexPath.row)
   }
 }
