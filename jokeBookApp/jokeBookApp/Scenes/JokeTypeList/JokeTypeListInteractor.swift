@@ -9,10 +9,11 @@ import Foundation
 
 protocol JokeTypeListBusinessLogic {
   func doLoadData(request: JokeTypeList.Data.Request)
+  func doSelectCell(request: JokeTypeList.SelectCell.Request)
 }
 
 protocol JokeTypeListDataStore {
-  var selectedJoke: JokeType? { get }
+  var selectedJokeType: JokeType? { get }
 }
 
 class JokeTypeListInteractor: JokeTypeListBusinessLogic, JokeTypeListDataStore {
@@ -21,7 +22,7 @@ class JokeTypeListInteractor: JokeTypeListBusinessLogic, JokeTypeListDataStore {
   
   var presenter: JokeTypeListPresentationLogic?
   
-  private(set) var selectedJoke: JokeType?
+  private(set) var selectedJokeType: JokeType?
   private let jokeTypes: [JokeType] = [.general, .knockKnock, .programmming]
   
   // MARK: Public
@@ -29,5 +30,14 @@ class JokeTypeListInteractor: JokeTypeListBusinessLogic, JokeTypeListDataStore {
   func doLoadData(request: JokeTypeList.Data.Request) {
     let response = JokeTypeList.Data.Response(types: jokeTypes)
     presenter?.presentLoadData(response: response)
+  }
+  
+  func doSelectCell(request: JokeTypeList.SelectCell.Request) {
+    guard let jokeType = jokeTypes[safe: request.index] else {
+      return
+    }
+    selectedJokeType = jokeType
+    let response = JokeTypeList.SelectCell.Response()
+    presenter?.presentSelectCell(response: response)
   }
 }

@@ -9,6 +9,7 @@ import Foundation
 
 protocol JokeTypeListPresentationLogic {
   func presentLoadData(response: JokeTypeList.Data.Response)
+  func presentSelectCell(response: JokeTypeList.SelectCell.Response)
 }
 
 class JokeTypeListPresenter: JokeTypeListPresentationLogic {
@@ -23,6 +24,11 @@ class JokeTypeListPresenter: JokeTypeListPresentationLogic {
     let viewData = createJokeTypeData(types: response.types)
     let viewModel = JokeTypeList.Data.ViewModel(data: viewData)
     viewController?.displayLoadData(viewModel: viewModel)
+  }
+  
+  func presentSelectCell(response: JokeTypeList.SelectCell.Response) {
+    let viewModel = JokeTypeList.SelectCell.ViewModel()
+    viewController?.displaySelectCell(viewModel: viewModel)
   }
   
   // MARK: - Private

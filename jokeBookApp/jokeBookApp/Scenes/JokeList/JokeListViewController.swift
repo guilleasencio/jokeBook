@@ -1,5 +1,5 @@
 //
-//  JokeTypeListViewController.swift
+//  JokeListViewController.swift
 //  jokeBookApp
 //
 //  Created by Guillermo Asencio Sanchez on 28/2/21.
@@ -7,19 +7,20 @@
 
 import UIKit
 
-protocol JokeTypeListDisplayLogic: class {
-  func displayLoadData(viewModel: JokeTypeList.Data.ViewModel)
-  func displaySelectCell(viewModel: JokeTypeList.SelectCell.ViewModel)
+protocol JokeListDisplayLogic: class {
+  func displayStaticData(viewModel: JokeList.StaticData.ViewModel)
+  func displayData(viewModel: JokeList.Data.ViewModel)
+  func displaySelectJoke(viewModel: JokeList.SelectJoke.ViewModel)
 }
 
-class JokeTypeListViewController: UIViewController, JokeTypeListDisplayLogic {
+class JokeListViewController: UIViewController, JokeListDisplayLogic {
   
   // MARK: - Properties
   
-  var interactor: JokeTypeListBusinessLogic?
-  var router: (NSObjectProtocol & JokeTypeListRoutingLogic & JokeTypeListDataPassing)?
+  var interactor: JokeListBusinessLogic?
+  var router: (NSObjectProtocol & JokeListRoutingLogic & JokeListDataPassing)?
   
-  private let sceneView = JokeTypeListView()
+  private let sceneView = JokeListView()
 
   // MARK: Object lifecycle
   
@@ -37,9 +38,9 @@ class JokeTypeListViewController: UIViewController, JokeTypeListDisplayLogic {
   
   private func setup() {
     let viewController = self
-    let interactor = JokeTypeListInteractor()
-    let presenter = JokeTypeListPresenter()
-    let router = JokeTypeListRouter()
+    let interactor = JokeListInteractor()
+    let presenter = JokeListPresenter()
+    let router = JokeListRouter()
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
@@ -58,60 +59,60 @@ class JokeTypeListViewController: UIViewController, JokeTypeListDisplayLogic {
     super.viewDidLoad()
     setupNavigationBar()
     setupComponents()
-    doLoadData()
+    doLoadStaticData()
   }
   
   // MARK: - Private
   
   private func setupNavigationBar() {
-    navigationItem.title = "Joke Type List"
-    navigationController?.setNavigationBarHidden(false, animated: false)
+    navigationItem.title = "Joke List"
     let backButtonView = BackBarButtonItem()
     backButtonView.delegate = self
     navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButtonView)
   }
   
   private func setupComponents() {
-    sceneView.delegate = self
+//    sceneView.delegate = self
   }
   
   // MARK: - Output
   
+  func doLoadStaticData() {
+    let request = JokeList.StaticData.Request()
+    interactor?.doLoadStaticData(request: request)
+  }
+  
   func doLoadData() {
-    let request = JokeTypeList.Data.Request()
+    let request = JokeList.Data.Request()
     interactor?.doLoadData(request: request)
   }
   
-  func doSelectCell(index: Int) {
-    let request = JokeTypeList.SelectCell.Request(index: index)
-    interactor?.doSelectCell(request: request)
+  func doSelectJoke(index: Int) {
+    let request = JokeList.SelectJoke.Request(index: index)
+    interactor?.doSelectJoke(request: request)
   }
   
   // MARK: - Input
   
-  func displayLoadData(viewModel: JokeTypeList.Data.ViewModel) {
-    sceneView.setupUI(data: viewModel.data)
+  func displayStaticData(viewModel: JokeList.StaticData.ViewModel) {
+    navigationItem.title = viewModel.title
+    doLoadData()
   }
   
-  func displaySelectCell(viewModel: JokeTypeList.SelectCell.ViewModel) {
-    router?.routeToJokeList()
+  func displayData(viewModel: JokeList.Data.ViewModel) {
+    
+  }
+  
+  func displaySelectJoke(viewModel: JokeList.SelectJoke.ViewModel) {
+    
   }
 }
 
 // MARK: - BackBarButtonItemDelegate
 
-extension JokeTypeListViewController: BackBarButtonItemDelegate {
+extension JokeListViewController: BackBarButtonItemDelegate {
   
   func backBarButtonItemDidPress(_ button: BackBarButtonItem) {
     router?.routeToBack()
-  }
-}
-
-// MARK: - JokeTypeListViewDelegate
-
-extension JokeTypeListViewController: JokeTypeListViewDelegate {
-  
-  func jokeTypeListViewDidTapCell(_ view: JokeTypeListView, index: Int) {
-    doSelectCell(index: index)
   }
 }

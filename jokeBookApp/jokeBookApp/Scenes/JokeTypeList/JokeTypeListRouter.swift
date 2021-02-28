@@ -30,6 +30,10 @@ class JokeTypeListRouter: NSObject, JokeTypeListRoutingLogic, JokeTypeListDataPa
   }
   
   func routeToJokeList() {
-    
+    let destinationVC = JokeListViewController()
+    if let sourceDS = dataStore, var destinationDS = destinationVC.router?.dataStore {
+      destinationDS.selectedJokeType = sourceDS.selectedJokeType
+    }
+    viewController?.navigationController?.pushViewController(destinationVC, animated: true)
   }
 }
