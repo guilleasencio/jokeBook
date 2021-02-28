@@ -5,7 +5,7 @@
 //  Created by Guillermo Asencio Sanchez on 28/2/21.
 //
 
-import UIKit
+import Foundation
 
 protocol MainBusinessLogic {
   func doLoadData(request: Main.Data.Request)

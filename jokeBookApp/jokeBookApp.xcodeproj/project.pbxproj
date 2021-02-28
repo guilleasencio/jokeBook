@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488B925EA73C2007B0BE3 /* AppDelegate.swift */; };
-		464488C325EA73C3007B0BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464488C225EA73C3007B0BE3 /* Assets.xcassets */; };
+		464488C325EA73C3007B0BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464488C225EA73C3007B0BE3 /* Images.xcassets */; };
 		464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */; };
 		464488D125EA73C3007B0BE3 /* jokeBookAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488D025EA73C3007B0BE3 /* jokeBookAppTests.swift */; };
 		464488DC25EA73C3007B0BE3 /* jokeBookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488DB25EA73C3007B0BE3 /* jokeBookAppUITests.swift */; };
@@ -19,6 +19,11 @@
 		46B6B9EB25EB8B7B00B7FF6E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E525EB8B7B00B7FF6E /* MainInteractor.swift */; };
 		46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9F825EB8EF100B7FF6E /* MainView.swift */; };
 		46B6B9FF25EB939000B7FF6E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9FE25EB939000B7FF6E /* UIView.swift */; };
+		46F6A74825EB9BB600329135 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A74725EB9BB600329135 /* CustomButton.swift */; };
+		46F6A74D25EB9F0C00329135 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A74C25EB9F0C00329135 /* UIImage.swift */; };
+		46F6A75225EBA27E00329135 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F6A75125EBA27E00329135 /* Colors.xcassets */; };
+		46F6A76D25EBAF1F00329135 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A76C25EBAF1F00329135 /* Colors.swift */; };
+		46F6A77225EBB09000329135 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77125EBB09000329135 /* UIColor.swift */; };
 		4D9FEA9B6CBB3E7BF0B3B698 /* Pods_jokeBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +47,7 @@
 /* Begin PBXFileReference section */
 		464488B625EA73C2007B0BE3 /* jokeBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jokeBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		464488B925EA73C2007B0BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		464488C225EA73C3007B0BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		464488C225EA73C3007B0BE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		464488C525EA73C3007B0BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		464488C725EA73C3007B0BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		464488CC25EA73C3007B0BE3 /* jokeBookAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jokeBookAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +63,11 @@
 		46B6B9E525EB8B7B00B7FF6E /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		46B6B9F825EB8EF100B7FF6E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		46B6B9FE25EB939000B7FF6E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		46F6A74725EB9BB600329135 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		46F6A74C25EB9F0C00329135 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		46F6A75125EBA27E00329135 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		46F6A76C25EBAF1F00329135 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		46F6A77125EBB09000329135 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9408372E16B3182E79C60FEE /* Pods-jokeBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.release.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4C8AAA158C49414F4D85DE /* Pods-jokeBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.debug.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jokeBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +134,7 @@
 			children = (
 				464488B925EA73C2007B0BE3 /* AppDelegate.swift */,
 				46B6B9DB25EB8A4F00B7FF6E /* Config */,
+				46F6A75925EBA38000329135 /* Constants */,
 				46B6B9FD25EB935F00B7FF6E /* Extensions */,
 				46832D7025EAF20C005F2E20 /* Managers */,
 				46B6B9D425EB89FD00B7FF6E /* Resources */,
@@ -169,6 +180,7 @@
 		46832D7225EAF229005F2E20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				46F6A74725EB9BB600329135 /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,7 +188,8 @@
 		46B6B9D425EB89FD00B7FF6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				464488C225EA73C3007B0BE3 /* Assets.xcassets */,
+				464488C225EA73C3007B0BE3 /* Images.xcassets */,
+				46F6A75125EBA27E00329135 /* Colors.xcassets */,
 				464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -215,8 +228,18 @@
 			isa = PBXGroup;
 			children = (
 				46B6B9FE25EB939000B7FF6E /* UIView.swift */,
+				46F6A74C25EB9F0C00329135 /* UIImage.swift */,
+				46F6A77125EBB09000329135 /* UIColor.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		46F6A75925EBA38000329135 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				46F6A76C25EBAF1F00329135 /* Colors.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		819F6FBEF6FE331150215128 /* Pods */ = {
@@ -236,6 +259,7 @@
 			buildConfigurationList = 464488E025EA73C3007B0BE3 /* Build configuration list for PBXNativeTarget "jokeBookApp" */;
 			buildPhases = (
 				52B15A53ACA2AD919BBEE44F /* [CP] Check Pods Manifest.lock */,
+				46F6A75D25EBA8FB00329135 /* SwiftGen */,
 				464488B225EA73C2007B0BE3 /* Sources */,
 				464488B325EA73C2007B0BE3 /* Frameworks */,
 				464488B425EA73C2007B0BE3 /* Resources */,
@@ -333,8 +357,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F6A75225EBA27E00329135 /* Colors.xcassets in Resources */,
 				464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */,
-				464488C325EA73C3007B0BE3 /* Assets.xcassets in Resources */,
+				464488C325EA73C3007B0BE3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +397,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		46F6A75D25EBA8FB00329135 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n";
+		};
 		52B15A53ACA2AD919BBEE44F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,7 +445,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B6B9FF25EB939000B7FF6E /* UIView.swift in Sources */,
+				46F6A77225EBB09000329135 /* UIColor.swift in Sources */,
+				46F6A76D25EBAF1F00329135 /* Colors.swift in Sources */,
+				46F6A74D25EB9F0C00329135 /* UIImage.swift in Sources */,
 				464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */,
+				46F6A74825EB9BB600329135 /* CustomButton.swift in Sources */,
 				46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */,
 				46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */,
 				46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */,

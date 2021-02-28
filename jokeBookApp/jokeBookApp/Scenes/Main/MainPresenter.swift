@@ -6,7 +6,7 @@
 //
 
 
-import UIKit
+import Foundation
 
 protocol MainPresentationLogic {
   func presentLoadData(response: Main.Data.Response)

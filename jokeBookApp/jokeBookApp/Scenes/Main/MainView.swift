@@ -25,7 +25,7 @@ class MainView: UIView {
   
   weak var delegate: MainViewDelegate?
   
-  private let nextButton = UIButton()
+  private let nextButton = CustomButton()
   
   // MARK: - Lifecycle
   
