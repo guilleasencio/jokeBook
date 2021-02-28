@@ -54,6 +54,12 @@
 		46F6A81125EC2E3A00329135 /* ScreenLoadErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A81025EC2E3A00329135 /* ScreenLoadErrorView.swift */; };
 		46F6A81625EC33E800329135 /* JokeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A81525EC33E800329135 /* JokeListTableViewCell.swift */; };
 		46F6A81B25EC381500329135 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A81A25EC381500329135 /* UITableViewCell.swift */; };
+		46F6A82625EC3FAB00329135 /* JokePunchlinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82025EC3FAB00329135 /* JokePunchlinePresenter.swift */; };
+		46F6A82825EC3FAB00329135 /* JokePunchlineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82225EC3FAB00329135 /* JokePunchlineRouter.swift */; };
+		46F6A82925EC3FAB00329135 /* JokePunchlineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82325EC3FAB00329135 /* JokePunchlineModels.swift */; };
+		46F6A82A25EC3FAB00329135 /* JokePunchlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82425EC3FAB00329135 /* JokePunchlineViewController.swift */; };
+		46F6A82B25EC3FAB00329135 /* JokePunchlineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A82525EC3FAB00329135 /* JokePunchlineInteractor.swift */; };
+		46F6A83325EC431300329135 /* JokePunchlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A83225EC431300329135 /* JokePunchlineView.swift */; };
 		4D9FEA9B6CBB3E7BF0B3B698 /* Pods_jokeBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +135,12 @@
 		46F6A81025EC2E3A00329135 /* ScreenLoadErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoadErrorView.swift; sourceTree = "<group>"; };
 		46F6A81525EC33E800329135 /* JokeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListTableViewCell.swift; sourceTree = "<group>"; };
 		46F6A81A25EC381500329135 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		46F6A82025EC3FAB00329135 /* JokePunchlinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlinePresenter.swift; sourceTree = "<group>"; };
+		46F6A82225EC3FAB00329135 /* JokePunchlineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineRouter.swift; sourceTree = "<group>"; };
+		46F6A82325EC3FAB00329135 /* JokePunchlineModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineModels.swift; sourceTree = "<group>"; };
+		46F6A82425EC3FAB00329135 /* JokePunchlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineViewController.swift; sourceTree = "<group>"; };
+		46F6A82525EC3FAB00329135 /* JokePunchlineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineInteractor.swift; sourceTree = "<group>"; };
+		46F6A83225EC431300329135 /* JokePunchlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePunchlineView.swift; sourceTree = "<group>"; };
 		9408372E16B3182E79C60FEE /* Pods-jokeBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.release.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4C8AAA158C49414F4D85DE /* Pods-jokeBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.debug.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jokeBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +248,7 @@
 		46832D7125EAF21A005F2E20 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				46F6A81F25EC3F9200329135 /* JokePunchline */,
 				46F6A7B225EBFBB800329135 /* JokeList */,
 				46F6A77625EBB58600329135 /* JokeTypeList */,
 				46B6B9DF25EB8B5800B7FF6E /* Main */,
@@ -404,6 +417,19 @@
 				46F6A80125EC156C00329135 /* JokesEntities.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		46F6A81F25EC3F9200329135 /* JokePunchline */ = {
+			isa = PBXGroup;
+			children = (
+				46F6A82025EC3FAB00329135 /* JokePunchlinePresenter.swift */,
+				46F6A82225EC3FAB00329135 /* JokePunchlineRouter.swift */,
+				46F6A82325EC3FAB00329135 /* JokePunchlineModels.swift */,
+				46F6A82425EC3FAB00329135 /* JokePunchlineViewController.swift */,
+				46F6A82525EC3FAB00329135 /* JokePunchlineInteractor.swift */,
+				46F6A83225EC431300329135 /* JokePunchlineView.swift */,
+			);
+			path = JokePunchline;
 			sourceTree = "<group>";
 		};
 		819F6FBEF6FE331150215128 /* Pods */ = {
@@ -616,6 +642,7 @@
 				46F6A76D25EBAF1F00329135 /* Colors.swift in Sources */,
 				46F6A7C625EBFCCD00329135 /* JokeListView.swift in Sources */,
 				46F6A74D25EB9F0C00329135 /* UIImage.swift in Sources */,
+				46F6A82825EC3FAB00329135 /* JokePunchlineRouter.swift in Sources */,
 				46F6A78A25EBBB5900329135 /* BackBarButtonItem.swift in Sources */,
 				46F6A7ED25EC085D00329135 /* NetworkError.swift in Sources */,
 				46F6A7E825EC07DD00329135 /* NetworkResponse.swift in Sources */,
@@ -623,6 +650,8 @@
 				46F6A7F225EC117500329135 /* NetworkEntityParser.swift in Sources */,
 				46F6A7AE25EBFAE800329135 /* Collection.swift in Sources */,
 				46F6A79B25EBD55C00329135 /* JokeTypeViewCell.swift in Sources */,
+				46F6A82925EC3FAB00329135 /* JokePunchlineModels.swift in Sources */,
+				46F6A82B25EC3FAB00329135 /* JokePunchlineInteractor.swift in Sources */,
 				46F6A7A825EBEA1700329135 /* UICollectionViewCell.swift in Sources */,
 				46F6A80225EC156C00329135 /* JokesEntities.swift in Sources */,
 				46F6A81125EC2E3A00329135 /* ScreenLoadErrorView.swift in Sources */,
@@ -634,12 +663,14 @@
 				46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */,
 				46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */,
 				46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */,
+				46F6A82A25EC3FAB00329135 /* JokePunchlineViewController.swift in Sources */,
 				46F6A81625EC33E800329135 /* JokeListTableViewCell.swift in Sources */,
 				46F6A7BC25EBFBD500329135 /* JokeListModels.swift in Sources */,
 				46F6A78F25EBC03400329135 /* JokeTypeListView.swift in Sources */,
 				46F6A7B925EBFBD500329135 /* JokeListPresenter.swift in Sources */,
 				46F6A78125EBB5AF00329135 /* JokeTypeListViewController.swift in Sources */,
 				46F6A80C25EC289400329135 /* LoaderView.swift in Sources */,
+				46F6A82625EC3FAB00329135 /* JokePunchlinePresenter.swift in Sources */,
 				46B6B9EA25EB8B7B00B7FF6E /* MainViewController.swift in Sources */,
 				46F6A81B25EC381500329135 /* UITableViewCell.swift in Sources */,
 				46B6B9EB25EB8B7B00B7FF6E /* MainInteractor.swift in Sources */,
@@ -647,6 +678,7 @@
 				46F6A80725EC1F4C00329135 /* NetworkConfig.swift in Sources */,
 				46F6A77F25EBB5AF00329135 /* JokeTypeListRouter.swift in Sources */,
 				46F6A7F725EC13E700329135 /* NetworkManager+JokesAPI.swift in Sources */,
+				46F6A83325EC431300329135 /* JokePunchlineView.swift in Sources */,
 				46F6A78025EBB5AF00329135 /* JokeTypeListModels.swift in Sources */,
 				46B6B9E625EB8B7B00B7FF6E /* MainPresenter.swift in Sources */,
 				46F6A7BB25EBFBD500329135 /* JokeListRouter.swift in Sources */,

@@ -73,7 +73,7 @@ class JokeListViewController: UIViewController, JokeListDisplayLogic {
   }
   
   private func setupComponents() {
-//    sceneView.delegate = self
+    sceneView.delegate = self
   }
   
   // MARK: - Output
@@ -105,7 +105,7 @@ class JokeListViewController: UIViewController, JokeListDisplayLogic {
   }
   
   func displaySelectJoke(viewModel: JokeList.SelectJoke.ViewModel) {
-    
+    router?.routeToJokePunchline()
   }
 }
 
@@ -115,5 +115,18 @@ extension JokeListViewController: BackBarButtonItemDelegate {
   
   func backBarButtonItemDidPress(_ button: BackBarButtonItem) {
     router?.routeToBack()
+  }
+}
+
+// MARK: - BackBarButtonItemDelegate
+
+extension JokeListViewController: JokeListViewDelegate {
+  
+  func jokeListViewDidTapCell(_ view: JokeListView, index: Int) {
+    doSelectJoke(index: index)
+  }
+  
+  func jokeListViewDidTapRetryButton(_ view: JokeListView) {
+    doLoadData()
   }
 }

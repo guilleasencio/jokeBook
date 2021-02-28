@@ -9,6 +9,7 @@ import UIKit
 
 protocol JokeListRoutingLogic {
   func routeToBack()
+  func routeToJokePunchline()
 }
 
 protocol JokeListDataPassing {
@@ -26,5 +27,13 @@ class JokeListRouter: NSObject, JokeListRoutingLogic, JokeListDataPassing {
   
   func routeToBack() {
     viewController?.navigationController?.popViewController(animated: true)
-  }  
+  }
+  
+  func routeToJokePunchline() {
+    let destinationVC = JokePunchlineViewController()
+    if let sourceDS = dataStore, var destinationDS = destinationVC.router?.dataStore {
+      destinationDS.selectedJoke = sourceDS.selectedJoke
+    }
+    viewController?.navigationController?.pushViewController(destinationVC, animated: true)
+  }
 }

@@ -67,6 +67,10 @@ class JokeListInteractor: JokeListBusinessLogic, JokeListDataStore {
   }
   
   func doSelectJoke(request: JokeList.SelectJoke.Request) {
+    guard let joke = jokes[safe: request.index] else {
+      return
+    }
+    self.selectedJoke = joke
     let response = JokeList.SelectJoke.Response()
     presenter?.presentSelectJoke(response: response)
   }
