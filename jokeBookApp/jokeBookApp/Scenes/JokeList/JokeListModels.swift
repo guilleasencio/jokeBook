@@ -29,6 +29,8 @@ enum JokeList {
     }
     
     struct Response {
+      let jokes: [JokeEntity]
+      let error: GetJokesError?
     }
     
     struct ViewModel {

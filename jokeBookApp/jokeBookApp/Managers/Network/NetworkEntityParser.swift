@@ -9,7 +9,7 @@ import Foundation
 
 protocol DomainConvertible {
   associatedtype DomainEntityType
-  func domainEntity(statusCode: Int?, headers: [String:String]) -> DomainEntityType
+  func domainEntity(statusCode: Int?, headers: [String:String]) -> DomainEntityType?
 }
 
 struct NetworkEntityParser {

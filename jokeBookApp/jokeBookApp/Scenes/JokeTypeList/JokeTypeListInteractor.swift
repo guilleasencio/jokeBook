@@ -23,7 +23,7 @@ class JokeTypeListInteractor: JokeTypeListBusinessLogic, JokeTypeListDataStore {
   var presenter: JokeTypeListPresentationLogic?
   
   private(set) var selectedJokeType: JokeType?
-  private let jokeTypes: [JokeType] = [.general, .knockKnock, .programmming]
+  private let jokeTypes: [JokeType] = [.general, .knockKnock, .programming]
   
   // MARK: Public
   

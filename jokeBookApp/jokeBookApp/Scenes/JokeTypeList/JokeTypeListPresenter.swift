@@ -48,7 +48,7 @@ class JokeTypeListPresenter: JokeTypeListPresentationLogic {
         return "general"
       case .knockKnock:
         return "knock-knock"
-      case .programmming:
+      case .programming:
         return "programming"
     }
   }
@@ -59,8 +59,8 @@ class JokeTypeListPresenter: JokeTypeListPresentationLogic {
         return "General"
       case .knockKnock:
         return "Knock-Knock"
-      case .programmming:
-        return "Programmming"
+      case .programming:
+        return "Programming"
     }
   }
 }

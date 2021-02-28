@@ -14,7 +14,8 @@ protocol JokeListBusinessLogic {
 }
 
 protocol JokeListDataStore {
-  var selectedJokeType: JokeType? { get set }  
+  var selectedJokeType: JokeType? { get set }
+  var selectedJoke: JokeEntity? { get }
 }
 
 class JokeListInteractor: JokeListBusinessLogic, JokeListDataStore {
@@ -22,8 +23,12 @@ class JokeListInteractor: JokeListBusinessLogic, JokeListDataStore {
   // MARK: - Properties
   
   var presenter: JokeListPresentationLogic?
+  var jokesApi: JokesAPI?
   
   var selectedJokeType: JokeType?
+  private(set) var selectedJoke: JokeEntity?
+  
+  var jokes: [JokeEntity] = []
 
   // MARK: - Public
   
@@ -36,8 +41,24 @@ class JokeListInteractor: JokeListBusinessLogic, JokeListDataStore {
   }
   
   func doLoadData(request: JokeList.Data.Request) {
-    let response = JokeList.Data.Response()
-    presenter?.presentData(response: response)
+    guard let jokeType = selectedJokeType else {
+      return
+    }
+    let parameters = GetJokesParameters(type: jokeType)
+    jokesApi?.getJokes(parameters: parameters) { [weak self] result in
+      guard let self = self else {
+        return
+      }
+      var hasError: GetJokesError?
+      switch result {
+        case .success(let entities):
+          self.jokes = entities
+        case .failure(let error):
+          hasError = error
+      }
+      let response = JokeList.Data.Response(jokes: self.jokes, error: hasError)
+      self.presenter?.presentData(response: response)
+    }
   }
   
   func doSelectJoke(request: JokeList.SelectJoke.Request) {

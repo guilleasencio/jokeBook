@@ -44,6 +44,7 @@ class JokeListViewController: UIViewController, JokeListDisplayLogic {
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
+    interactor.jokesApi = Managers.network
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor

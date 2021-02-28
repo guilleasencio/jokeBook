@@ -7,14 +7,6 @@
 
 import UIKit
 
-// MARK: - Enums
-
-enum JokeType {
-  case general
-  case knockKnock
-  case programmming
-}
-
 // MARK: - ViewData
 
 struct JokeTypeViewCellData {

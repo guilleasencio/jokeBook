@@ -41,7 +41,7 @@ class JokeListPresenter: JokeListPresentationLogic {
         return "Joke List (General)"
       case .knockKnock:
         return "Joke List (Knock-knock)"
-      case .programmming:
+      case .programming:
         return "Joke List (Programming)"
     }
   }
