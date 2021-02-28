@@ -84,7 +84,7 @@ class JokeTypeListViewController: UIViewController, JokeTypeListDisplayLogic {
   // MARK: - Input
   
   func displayLoadData(viewModel: JokeTypeList.Data.ViewModel) {
-    //nameTextField.text = viewModel.name
+    sceneView.setupUI(data: viewModel.data)
   }
 }
 

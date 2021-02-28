@@ -12,6 +12,7 @@ protocol JokeTypeListBusinessLogic {
 }
 
 protocol JokeTypeListDataStore {
+  var selectedJoke: JokeType? { get }
 }
 
 class JokeTypeListInteractor: JokeTypeListBusinessLogic, JokeTypeListDataStore {
@@ -20,10 +21,13 @@ class JokeTypeListInteractor: JokeTypeListBusinessLogic, JokeTypeListDataStore {
   
   var presenter: JokeTypeListPresentationLogic?
   
+  private(set) var selectedJoke: JokeType?
+  private let jokeTypes: [JokeType] = [.general, .knockKnock, .programmming]
+  
   // MARK: Public
   
   func doLoadData(request: JokeTypeList.Data.Request) {
-    let response = JokeTypeList.Data.Response()
+    let response = JokeTypeList.Data.Response(types: jokeTypes)
     presenter?.presentLoadData(response: response)
   }
 }

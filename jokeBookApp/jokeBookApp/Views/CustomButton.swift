@@ -48,14 +48,15 @@ class CustomButton: UIButton {
     setBackgroundImage(UIImage(color: UIColor.lightBlue), for: .normal)
     setBackgroundImage(UIImage(color: UIColor.lightGray), for: .disabled)
     
-    layer.borderColor = UIColor.black.cgColor
+    layer.borderColor = UIColor.softBlack.cgColor
     layer.borderWidth = 1
     layer.masksToBounds = true
     layer.cornerRadius = ViewTraits.cornerRadius
     
     setTitleColor(.black, for: .normal)
     setTitleColor(.darkGray, for: .disabled)
-    titleLabel?.font = .boldSystemFont(ofSize: ViewTraits.defaultFontSize)
+    titleLabel?.font = UIFont(name: "SF-Pro" , size: ViewTraits.defaultFontSize)
+    titleLabel?.textColor = UIColor.softBlack
     titleLabel?.lineBreakMode = .byTruncatingTail
     titleLabel?.numberOfLines = 1
     titleLabel?.textAlignment = .center
@@ -68,6 +69,7 @@ class CustomButton: UIButton {
   }
   
   private func refreshEnabledStyle() {
-    layer.borderColor = isEnabled ? UIColor.black.cgColor : UIColor.darkGray.cgColor
+    layer.borderColor = isEnabled ? UIColor.softBlack.cgColor : UIColor.lightGray.cgColor
+    titleLabel?.textColor = isEnabled ? UIColor.softBlack : UIColor.lightGray
   }
 }

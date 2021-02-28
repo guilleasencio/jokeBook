@@ -15,9 +15,11 @@ enum JokeTypeList {
     }
     
     struct Response {
+      let types: [JokeType]
     }
     
     struct ViewModel {
+      let data: [JokeTypeViewCellData]
     }
   }
 }
