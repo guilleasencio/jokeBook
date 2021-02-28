@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488B925EA73C2007B0BE3 /* AppDelegate.swift */; };
-		464488BC25EA73C2007B0BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488BB25EA73C2007B0BE3 /* SceneDelegate.swift */; };
-		464488BE25EA73C2007B0BE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488BD25EA73C2007B0BE3 /* ViewController.swift */; };
-		464488C125EA73C2007B0BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464488BF25EA73C2007B0BE3 /* Main.storyboard */; };
 		464488C325EA73C3007B0BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464488C225EA73C3007B0BE3 /* Assets.xcassets */; };
 		464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */; };
 		464488D125EA73C3007B0BE3 /* jokeBookAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488D025EA73C3007B0BE3 /* jokeBookAppTests.swift */; };
 		464488DC25EA73C3007B0BE3 /* jokeBookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488DB25EA73C3007B0BE3 /* jokeBookAppUITests.swift */; };
+		46B6B9E625EB8B7B00B7FF6E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E025EB8B7B00B7FF6E /* MainPresenter.swift */; };
+		46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E225EB8B7B00B7FF6E /* MainRouter.swift */; };
+		46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E325EB8B7B00B7FF6E /* MainModels.swift */; };
+		46B6B9EA25EB8B7B00B7FF6E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E425EB8B7B00B7FF6E /* MainViewController.swift */; };
+		46B6B9EB25EB8B7B00B7FF6E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E525EB8B7B00B7FF6E /* MainInteractor.swift */; };
+		46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9F825EB8EF100B7FF6E /* MainView.swift */; };
+		46B6B9FF25EB939000B7FF6E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9FE25EB939000B7FF6E /* UIView.swift */; };
 		4D9FEA9B6CBB3E7BF0B3B698 /* Pods_jokeBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +42,6 @@
 /* Begin PBXFileReference section */
 		464488B625EA73C2007B0BE3 /* jokeBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jokeBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		464488B925EA73C2007B0BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		464488BB25EA73C2007B0BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		464488BD25EA73C2007B0BE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		464488C025EA73C2007B0BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		464488C225EA73C3007B0BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		464488C525EA73C3007B0BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		464488C725EA73C3007B0BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +51,13 @@
 		464488D725EA73C3007B0BE3 /* jokeBookAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jokeBookAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		464488DB25EA73C3007B0BE3 /* jokeBookAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jokeBookAppUITests.swift; sourceTree = "<group>"; };
 		464488DD25EA73C3007B0BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B6B9E025EB8B7B00B7FF6E /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		46B6B9E225EB8B7B00B7FF6E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		46B6B9E325EB8B7B00B7FF6E /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		46B6B9E425EB8B7B00B7FF6E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		46B6B9E525EB8B7B00B7FF6E /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		46B6B9F825EB8EF100B7FF6E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		46B6B9FE25EB939000B7FF6E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9408372E16B3182E79C60FEE /* Pods-jokeBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.release.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4C8AAA158C49414F4D85DE /* Pods-jokeBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.debug.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jokeBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,12 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				464488B925EA73C2007B0BE3 /* AppDelegate.swift */,
-				464488BB25EA73C2007B0BE3 /* SceneDelegate.swift */,
-				464488BD25EA73C2007B0BE3 /* ViewController.swift */,
-				464488BF25EA73C2007B0BE3 /* Main.storyboard */,
-				464488C225EA73C3007B0BE3 /* Assets.xcassets */,
-				464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */,
-				464488C725EA73C3007B0BE3 /* Info.plist */,
+				46B6B9DB25EB8A4F00B7FF6E /* Config */,
+				46B6B9FD25EB935F00B7FF6E /* Extensions */,
+				46832D7025EAF20C005F2E20 /* Managers */,
+				46B6B9D425EB89FD00B7FF6E /* Resources */,
+				46832D7125EAF21A005F2E20 /* Scenes */,
+				46832D7225EAF229005F2E20 /* Views */,
 			);
 			path = jokeBookApp;
 			sourceTree = "<group>";
@@ -141,6 +149,74 @@
 				464488DD25EA73C3007B0BE3 /* Info.plist */,
 			);
 			path = jokeBookAppUITests;
+			sourceTree = "<group>";
+		};
+		46832D7025EAF20C005F2E20 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		46832D7125EAF21A005F2E20 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				46B6B9DF25EB8B5800B7FF6E /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		46832D7225EAF229005F2E20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46B6B9D425EB89FD00B7FF6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				464488C225EA73C3007B0BE3 /* Assets.xcassets */,
+				464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46B6B9DB25EB8A4F00B7FF6E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				464488C725EA73C3007B0BE3 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		46B6B9DF25EB8B5800B7FF6E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				46B6B9E025EB8B7B00B7FF6E /* MainPresenter.swift */,
+				46B6B9E225EB8B7B00B7FF6E /* MainRouter.swift */,
+				46B6B9E325EB8B7B00B7FF6E /* MainModels.swift */,
+				46B6B9E425EB8B7B00B7FF6E /* MainViewController.swift */,
+				46B6B9E525EB8B7B00B7FF6E /* MainInteractor.swift */,
+				46B6B9F825EB8EF100B7FF6E /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		46B6B9FD25EB935F00B7FF6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46B6BA0325EB93FB00B7FF6E /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46B6BA0325EB93FB00B7FF6E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				46B6B9FE25EB939000B7FF6E /* UIView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		819F6FBEF6FE331150215128 /* Pods */ = {
@@ -259,7 +335,6 @@
 			files = (
 				464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */,
 				464488C325EA73C3007B0BE3 /* Assets.xcassets in Resources */,
-				464488C125EA73C2007B0BE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				464488BE25EA73C2007B0BE3 /* ViewController.swift in Sources */,
+				46B6B9FF25EB939000B7FF6E /* UIView.swift in Sources */,
 				464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */,
-				464488BC25EA73C2007B0BE3 /* SceneDelegate.swift in Sources */,
+				46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */,
+				46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */,
+				46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */,
+				46B6B9EA25EB8B7B00B7FF6E /* MainViewController.swift in Sources */,
+				46B6B9EB25EB8B7B00B7FF6E /* MainInteractor.swift in Sources */,
+				46B6B9E625EB8B7B00B7FF6E /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,14 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		464488BF25EA73C2007B0BE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				464488C025EA73C2007B0BE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -507,7 +579,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6G7RTZRKS;
-				INFOPLIST_FILE = jokeBookApp/Info.plist;
+				INFOPLIST_FILE = jokeBookApp/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,7 +600,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6G7RTZRKS;
-				INFOPLIST_FILE = jokeBookApp/Info.plist;
+				INFOPLIST_FILE = jokeBookApp/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
