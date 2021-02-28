@@ -40,6 +40,12 @@
 		46F6A7BD25EBFBD500329135 /* JokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7B725EBFBD500329135 /* JokeListViewController.swift */; };
 		46F6A7BE25EBFBD500329135 /* JokeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7B825EBFBD500329135 /* JokeListInteractor.swift */; };
 		46F6A7C625EBFCCD00329135 /* JokeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7C525EBFCCD00329135 /* JokeListView.swift */; };
+		46F6A7CE25EC02C500329135 /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7CD25EC02C500329135 /* Managers.swift */; };
+		46F6A7D625EC037200329135 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7D525EC037200329135 /* NetworkManager.swift */; };
+		46F6A7E325EC07CE00329135 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7E225EC07CE00329135 /* NetworkRequest.swift */; };
+		46F6A7E825EC07DD00329135 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7E725EC07DD00329135 /* NetworkResponse.swift */; };
+		46F6A7ED25EC085D00329135 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7EC25EC085D00329135 /* NetworkError.swift */; };
+		46F6A7F225EC117500329135 /* NetworkEntityParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A7F125EC117500329135 /* NetworkEntityParser.swift */; };
 		4D9FEA9B6CBB3E7BF0B3B698 /* Pods_jokeBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +107,12 @@
 		46F6A7B725EBFBD500329135 /* JokeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListViewController.swift; sourceTree = "<group>"; };
 		46F6A7B825EBFBD500329135 /* JokeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListInteractor.swift; sourceTree = "<group>"; };
 		46F6A7C525EBFCCD00329135 /* JokeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListView.swift; sourceTree = "<group>"; };
+		46F6A7CD25EC02C500329135 /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		46F6A7D525EC037200329135 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		46F6A7E225EC07CE00329135 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		46F6A7E725EC07DD00329135 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		46F6A7EC25EC085D00329135 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		46F6A7F125EC117500329135 /* NetworkEntityParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEntityParser.swift; sourceTree = "<group>"; };
 		9408372E16B3182E79C60FEE /* Pods-jokeBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.release.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4C8AAA158C49414F4D85DE /* Pods-jokeBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.debug.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jokeBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +210,8 @@
 		46832D7025EAF20C005F2E20 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				46F6A7CA25EC028800329135 /* Network */,
+				46F6A7CD25EC02C500329135 /* Managers.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -330,6 +344,34 @@
 				46F6A7C525EBFCCD00329135 /* JokeListView.swift */,
 			);
 			path = JokeList;
+			sourceTree = "<group>";
+		};
+		46F6A7CA25EC028800329135 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				46F6A7CB25EC029600329135 /* Api */,
+				46F6A7CC25EC02A300329135 /* Models */,
+				46F6A7D525EC037200329135 /* NetworkManager.swift */,
+				46F6A7E225EC07CE00329135 /* NetworkRequest.swift */,
+				46F6A7E725EC07DD00329135 /* NetworkResponse.swift */,
+				46F6A7EC25EC085D00329135 /* NetworkError.swift */,
+				46F6A7F125EC117500329135 /* NetworkEntityParser.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		46F6A7CB25EC029600329135 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		46F6A7CC25EC02A300329135 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		819F6FBEF6FE331150215128 /* Pods */ = {
@@ -538,15 +580,21 @@
 				46F6A78225EBB5AF00329135 /* JokeTypeListInteractor.swift in Sources */,
 				46F6A77225EBB09000329135 /* UIColor.swift in Sources */,
 				46F6A7BD25EBFBD500329135 /* JokeListViewController.swift in Sources */,
+				46F6A7E325EC07CE00329135 /* NetworkRequest.swift in Sources */,
 				46F6A76D25EBAF1F00329135 /* Colors.swift in Sources */,
 				46F6A7C625EBFCCD00329135 /* JokeListView.swift in Sources */,
 				46F6A74D25EB9F0C00329135 /* UIImage.swift in Sources */,
 				46F6A78A25EBBB5900329135 /* BackBarButtonItem.swift in Sources */,
+				46F6A7ED25EC085D00329135 /* NetworkError.swift in Sources */,
+				46F6A7E825EC07DD00329135 /* NetworkResponse.swift in Sources */,
 				46F6A77D25EBB5AF00329135 /* JokeTypeListPresenter.swift in Sources */,
+				46F6A7F225EC117500329135 /* NetworkEntityParser.swift in Sources */,
 				46F6A7AE25EBFAE800329135 /* Collection.swift in Sources */,
 				46F6A79B25EBD55C00329135 /* JokeTypeViewCell.swift in Sources */,
 				46F6A7A825EBEA1700329135 /* UICollectionViewCell.swift in Sources */,
+				46F6A7D625EC037200329135 /* NetworkManager.swift in Sources */,
 				46F6A7BE25EBFBD500329135 /* JokeListInteractor.swift in Sources */,
+				46F6A7CE25EC02C500329135 /* Managers.swift in Sources */,
 				464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */,
 				46F6A74825EB9BB600329135 /* CustomButton.swift in Sources */,
 				46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */,
