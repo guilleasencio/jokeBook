@@ -24,6 +24,13 @@
 		46F6A75225EBA27E00329135 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F6A75125EBA27E00329135 /* Colors.xcassets */; };
 		46F6A76D25EBAF1F00329135 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A76C25EBAF1F00329135 /* Colors.swift */; };
 		46F6A77225EBB09000329135 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77125EBB09000329135 /* UIColor.swift */; };
+		46F6A77D25EBB5AF00329135 /* JokeTypeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77725EBB5AF00329135 /* JokeTypeListPresenter.swift */; };
+		46F6A77F25EBB5AF00329135 /* JokeTypeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77925EBB5AF00329135 /* JokeTypeListRouter.swift */; };
+		46F6A78025EBB5AF00329135 /* JokeTypeListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77A25EBB5AF00329135 /* JokeTypeListModels.swift */; };
+		46F6A78125EBB5AF00329135 /* JokeTypeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77B25EBB5AF00329135 /* JokeTypeListViewController.swift */; };
+		46F6A78225EBB5AF00329135 /* JokeTypeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A77C25EBB5AF00329135 /* JokeTypeListInteractor.swift */; };
+		46F6A78A25EBBB5900329135 /* BackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A78925EBBB5900329135 /* BackBarButtonItem.swift */; };
+		46F6A78F25EBC03400329135 /* JokeTypeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6A78E25EBC03400329135 /* JokeTypeListView.swift */; };
 		4D9FEA9B6CBB3E7BF0B3B698 /* Pods_jokeBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +75,13 @@
 		46F6A75125EBA27E00329135 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		46F6A76C25EBAF1F00329135 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		46F6A77125EBB09000329135 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		46F6A77725EBB5AF00329135 /* JokeTypeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTypeListPresenter.swift; sourceTree = "<group>"; };
+		46F6A77925EBB5AF00329135 /* JokeTypeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTypeListRouter.swift; sourceTree = "<group>"; };
+		46F6A77A25EBB5AF00329135 /* JokeTypeListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTypeListModels.swift; sourceTree = "<group>"; };
+		46F6A77B25EBB5AF00329135 /* JokeTypeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTypeListViewController.swift; sourceTree = "<group>"; };
+		46F6A77C25EBB5AF00329135 /* JokeTypeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTypeListInteractor.swift; sourceTree = "<group>"; };
+		46F6A78925EBBB5900329135 /* BackBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBarButtonItem.swift; sourceTree = "<group>"; };
+		46F6A78E25EBC03400329135 /* JokeTypeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTypeListView.swift; sourceTree = "<group>"; };
 		9408372E16B3182E79C60FEE /* Pods-jokeBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.release.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4C8AAA158C49414F4D85DE /* Pods-jokeBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jokeBookApp.debug.xcconfig"; path = "Target Support Files/Pods-jokeBookApp/Pods-jokeBookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6990D76FB7DE7C24ECF297 /* Pods_jokeBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jokeBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +186,7 @@
 		46832D7125EAF21A005F2E20 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				46F6A77625EBB58600329135 /* JokeTypeList */,
 				46B6B9DF25EB8B5800B7FF6E /* Main */,
 			);
 			path = Scenes;
@@ -181,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				46F6A74725EB9BB600329135 /* CustomButton.swift */,
+				46F6A78925EBBB5900329135 /* BackBarButtonItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +256,19 @@
 				46F6A76C25EBAF1F00329135 /* Colors.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		46F6A77625EBB58600329135 /* JokeTypeList */ = {
+			isa = PBXGroup;
+			children = (
+				46F6A77725EBB5AF00329135 /* JokeTypeListPresenter.swift */,
+				46F6A77925EBB5AF00329135 /* JokeTypeListRouter.swift */,
+				46F6A77A25EBB5AF00329135 /* JokeTypeListModels.swift */,
+				46F6A77B25EBB5AF00329135 /* JokeTypeListViewController.swift */,
+				46F6A77C25EBB5AF00329135 /* JokeTypeListInteractor.swift */,
+				46F6A78E25EBC03400329135 /* JokeTypeListView.swift */,
+			);
+			path = JokeTypeList;
 			sourceTree = "<group>";
 		};
 		819F6FBEF6FE331150215128 /* Pods */ = {
@@ -445,16 +474,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B6B9FF25EB939000B7FF6E /* UIView.swift in Sources */,
+				46F6A78225EBB5AF00329135 /* JokeTypeListInteractor.swift in Sources */,
 				46F6A77225EBB09000329135 /* UIColor.swift in Sources */,
 				46F6A76D25EBAF1F00329135 /* Colors.swift in Sources */,
 				46F6A74D25EB9F0C00329135 /* UIImage.swift in Sources */,
+				46F6A78A25EBBB5900329135 /* BackBarButtonItem.swift in Sources */,
+				46F6A77D25EBB5AF00329135 /* JokeTypeListPresenter.swift in Sources */,
 				464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */,
 				46F6A74825EB9BB600329135 /* CustomButton.swift in Sources */,
 				46B6B9F925EB8EF100B7FF6E /* MainView.swift in Sources */,
 				46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */,
 				46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */,
+				46F6A78F25EBC03400329135 /* JokeTypeListView.swift in Sources */,
+				46F6A78125EBB5AF00329135 /* JokeTypeListViewController.swift in Sources */,
 				46B6B9EA25EB8B7B00B7FF6E /* MainViewController.swift in Sources */,
 				46B6B9EB25EB8B7B00B7FF6E /* MainInteractor.swift in Sources */,
+				46F6A77F25EBB5AF00329135 /* JokeTypeListRouter.swift in Sources */,
+				46F6A78025EBB5AF00329135 /* JokeTypeListModels.swift in Sources */,
 				46B6B9E625EB8B7B00B7FF6E /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

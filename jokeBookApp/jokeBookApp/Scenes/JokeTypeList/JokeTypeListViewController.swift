@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  JokeTypeListViewController.swift
 //  jokeBookApp
 //
 //  Created by Guillermo Asencio Sanchez on 28/2/21.
@@ -7,19 +7,19 @@
 
 import UIKit
 
-protocol MainDisplayLogic: class {
-  func displayLoadData(viewModel: Main.Data.ViewModel)
+protocol JokeTypeListDisplayLogic: class {
+  func displayLoadData(viewModel: JokeTypeList.Data.ViewModel)
 }
 
-class MainViewController: UIViewController, MainDisplayLogic {
+class JokeTypeListViewController: UIViewController, JokeTypeListDisplayLogic {
   
   // MARK: - Properties
   
-  var interactor: MainBusinessLogic?
-  var router: (NSObjectProtocol & MainRoutingLogic & MainDataPassing)?
-
-  private let sceneView = MainView()
+  var interactor: JokeTypeListBusinessLogic?
+  var router: (NSObjectProtocol & JokeTypeListRoutingLogic & JokeTypeListDataPassing)?
   
+  private let sceneView = JokeTypeListView()
+
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -36,9 +36,9 @@ class MainViewController: UIViewController, MainDisplayLogic {
   
   private func setup() {
     let viewController = self
-    let interactor = MainInteractor()
-    let presenter = MainPresenter()
-    let router = MainRouter()
+    let interactor = JokeTypeListInteractor()
+    let presenter = JokeTypeListPresenter()
+    let router = JokeTypeListRouter()
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
@@ -60,39 +60,39 @@ class MainViewController: UIViewController, MainDisplayLogic {
     doLoadData()
   }
   
-  override func viewWillAppear(_ animated: Bool) {
-    navigationController?.setNavigationBarHidden(true, animated: false)
-  }
-  
   // MARK: - Private
   
   private func setupNavigationBar() {
-    navigationController?.setNavigationBarHidden(true, animated: false)
+    navigationItem.title = "Joke Type List"
+    navigationController?.setNavigationBarHidden(false, animated: false)
+    let backButtonView = BackBarButtonItem()
+    backButtonView.delegate = self
+    navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButtonView)
   }
   
   private func setupComponents() {
-    sceneView.delegate = self
+//    sceneView.delegate = self
   }
   
   // MARK: - Output
-    
+  
   func doLoadData() {
-    let request = Main.Data.Request()
+    let request = JokeTypeList.Data.Request()
     interactor?.doLoadData(request: request)
   }
   
   // MARK: - Input
   
-  func displayLoadData(viewModel: Main.Data.ViewModel) {
-    sceneView.setupUI(data: viewModel.data)
+  func displayLoadData(viewModel: JokeTypeList.Data.ViewModel) {
+    //nameTextField.text = viewModel.name
   }
 }
 
-// MARK: - MainViewDelegate
+// MARK: - BackBarButtonItemDelegate
 
-extension MainViewController: MainViewDelegate {
+extension JokeTypeListViewController: BackBarButtonItemDelegate {
   
-  func mainViewDidTapButton(_ view: MainView) {
-    router?.routeToJokeTypeList()
+  func backBarButtonItemDidPress(_ button: BackBarButtonItem) {
+    router?.routeToBack()
   }
 }

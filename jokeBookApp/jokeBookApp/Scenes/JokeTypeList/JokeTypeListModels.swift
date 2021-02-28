@@ -1,5 +1,5 @@
 //
-//  MainModels.swift
+//  JokeTypeListModels.swift
 //  jokeBookApp
 //
 //  Created by Guillermo Asencio Sanchez on 28/2/21.
@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Use cases
 
-enum Main {
+enum JokeTypeList {
   enum Data {
     struct Request {
     }
@@ -18,13 +18,6 @@ enum Main {
     }
     
     struct ViewModel {
-      let data: MainViewData
     }
   }
-}
-
-// MARK: - View Models
-
-struct MainViewData {
-  let buttonText: String
 }

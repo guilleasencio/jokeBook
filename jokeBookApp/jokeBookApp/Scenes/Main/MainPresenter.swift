@@ -5,7 +5,6 @@
 //  Created by Guillermo Asencio Sanchez on 28/2/21.
 //
 
-
 import Foundation
 
 protocol MainPresentationLogic {

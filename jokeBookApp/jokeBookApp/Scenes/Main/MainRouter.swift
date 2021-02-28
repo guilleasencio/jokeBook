@@ -5,7 +5,6 @@
 //  Created by Guillermo Asencio Sanchez on 28/2/21.
 //
 
-
 import UIKit
 
 protocol MainRoutingLogic
@@ -27,6 +26,7 @@ class MainRouter: NSObject, MainRoutingLogic, MainDataPassing {
   // MARK: Routing
   
   func routeToJokeTypeList() {
-    
+    let destinationVC = JokeTypeListViewController()
+    viewController?.navigationController?.pushViewController(destinationVC, animated: true)
   }
 }
