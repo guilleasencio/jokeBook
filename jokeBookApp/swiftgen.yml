@@ -1,0 +1,7 @@
+input_dir: jokeBookApp
+output_dir: jokeBookApp/Constants
+xcassets:
+  - inputs: Resources/Colors.xcassets
+    outputs:
+      - templatePath: swiftgen/colors.stencil
+        output: Colors.swift
