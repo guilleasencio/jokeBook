@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		464488BA25EA73C2007B0BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488B925EA73C2007B0BE3 /* AppDelegate.swift */; };
-		464488C325EA73C3007B0BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464488C225EA73C3007B0BE3 /* Images.xcassets */; };
-		464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */; };
 		464488D125EA73C3007B0BE3 /* jokeBookAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488D025EA73C3007B0BE3 /* jokeBookAppTests.swift */; };
 		464488DC25EA73C3007B0BE3 /* jokeBookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464488DB25EA73C3007B0BE3 /* jokeBookAppUITests.swift */; };
 		469DA2DD25EC4CF4006F3919 /* laughs.json in Resources */ = {isa = PBXBuildFile; fileRef = 469DA2DC25EC4CF4006F3919 /* laughs.json */; };
 		469DA2E225EC510A006F3919 /* jellyfish.json in Resources */ = {isa = PBXBuildFile; fileRef = 469DA2E125EC510A006F3919 /* jellyfish.json */; };
+		46ACDC5E25EC694800BB06DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464488C225EA73C3007B0BE3 /* Images.xcassets */; };
+		46ACDC6225EC694F00BB06DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464488C425EA73C3007B0BE3 /* LaunchScreen.storyboard */; };
 		46B6B9E625EB8B7B00B7FF6E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E025EB8B7B00B7FF6E /* MainPresenter.swift */; };
 		46B6B9E825EB8B7B00B7FF6E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E225EB8B7B00B7FF6E /* MainRouter.swift */; };
 		46B6B9E925EB8B7B00B7FF6E /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B6B9E325EB8B7B00B7FF6E /* MainModels.swift */; };
@@ -564,9 +564,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46ACDC6225EC694F00BB06DB /* LaunchScreen.storyboard in Resources */,
+				46ACDC5E25EC694800BB06DB /* Images.xcassets in Resources */,
 				46F6A75225EBA27E00329135 /* Colors.xcassets in Resources */,
-				464488C625EA73C3007B0BE3 /* LaunchScreen.storyboard in Resources */,
-				464488C325EA73C3007B0BE3 /* Images.xcassets in Resources */,
 				469DA2DD25EC4CF4006F3919 /* laughs.json in Resources */,
 				469DA2E225EC510A006F3919 /* jellyfish.json in Resources */,
 			);
